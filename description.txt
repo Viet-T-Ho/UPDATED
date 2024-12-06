@@ -1,1 +1,39 @@
+Countdown Math Updated Version
 
+December, 2024 
+CS 141, UIC
+
+- Project Overview: 
+  Developed an interactive math puzzle game based on the popular "Countdown" format. The game challenges players to select a combination of numbers and use basic arithmetic operations to reach a randomly generated target number. Key features include an undo function for revisiting previous moves, a backtracking algorithm to suggest possible solutions, and a linked list structure for tracking game states.
+
+- Responsibilities & Achievements:
+
+- Game Design and Mechanics:
+  * Created a math-based puzzle game where players choose numbers (large: 25, 50, 75, 100; small: 1-10) and use basic arithmetic operations to reach a target number.
+  * Allowed users to input mathematical calculations, which update the list of available numbers and bring them closer to the target.
+
+- Undo Feature Implementation:
+  * Implemented an undo feature that lets players revert to previous game states, offering a way to backtrack and try different strategies.
+  * Used a linked list to manage game states, storing each move as a node. The first node is removed when the player chooses to undo, allowing the game to restore the previous state.
+
+- Solution Finder with Backtracking:
+  * Developed a backtracking algorithm to explore all possible operations and sequences of numbers to find a valid solution to the puzzle.
+  * Provided users with a list of potential solutions or informed them when no solution was possible.
+
+- Game State Management:
+  * Used a linked list (GameList class) to track and store each game state, ensuring players' moves and the history of the game were well managed.
+  * Each valid move added to the history was recorded as a new node, which allowed efficient traversal and state restoration.
+
+- User Interface and Interaction:
+  * Created a command-line interface where players could input their mathematical operations, choose to undo moves, request a potential solution, or quit the game.
+  * Ensured that the user input was validated, and error messages were displayed for invalid inputs, such as entering numbers not available in the list.
+
+- Testing and Optimization:
+  * Conducted extensive testing to ensure that the undo and solution features worked correctly, addressing issues like invalid calculations and improper game state restoration.
+*  Optimized the backtracking algorithm for faster performance, particularly when the number of available numbers increased.
+
+- Technical Skills:
+
+  * Programming Languages: C++, Object-Oriented Programming (OOP)
+  * Data Structures: Linked Lists, Vectors, Recursive Backtracking
+  * Tools: Visual Studio
